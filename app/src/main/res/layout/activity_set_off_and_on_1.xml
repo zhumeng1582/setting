@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <org.ido.settings.widget.ItemOpenAndClose
+            android:id="@+id/itemOpenAndClose1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <org.ido.settings.widget.ItemOpenAndClose
+            android:id="@+id/itemOpenAndClose2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <org.ido.settings.widget.ItemOpenAndClose
+            android:id="@+id/itemOpenAndClose3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <org.ido.settings.widget.ItemOpenAndClose
+            android:id="@+id/itemOpenAndClose4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <org.ido.settings.widget.ItemOpenAndClose
+            android:id="@+id/itemOpenAndClose5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <org.ido.settings.widget.ItemOpenAndClose
+            android:id="@+id/itemOpenAndClose6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <org.ido.settings.widget.ItemOpenAndClose
+            android:id="@+id/itemOpenAndClose7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"/>
+    </LinearLayout>
+
+
+</ScrollView>

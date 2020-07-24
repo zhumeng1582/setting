@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingBottom="80dp"
+    android:paddingLeft="80dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="节点："
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/port"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="波特率："
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/speed9600"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="9600" />
+
+            <RadioButton
+                android:id="@+id/speed115200"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="115200" />
+
+            <RadioButton
+                android:id="@+id/speed921600"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="921600" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="数据位："
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/bit8"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="8位" />
+
+            <RadioButton
+                android:id="@+id/bit7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="7位" />
+
+            <RadioButton
+                android:id="@+id/bit6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="6位" />
+
+            <RadioButton
+                android:id="@+id/bit5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="5位" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="校验位："
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/checkN"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="无校验" />
+
+            <RadioButton
+                android:id="@+id/checkO"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="奇校验" />
+
+            <RadioButton
+                android:id="@+id/checkE"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="偶校验" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="流控位："
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/flowN"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="无流控" />
+
+            <RadioButton
+                android:id="@+id/flowH"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="硬件流控" />
+
+            <RadioButton
+                android:id="@+id/flowS"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="软件流控" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="停止位："
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/stop1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="1位" />
+
+            <RadioButton
+                android:id="@+id/stop2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="2位" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnInit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="打开"/>
+
+    <EditText
+        android:id="@+id/uartRxEt"
+        android:layout_width="317dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="start|top"
+        android:hint="接收"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <Button
+            android:id="@+id/uartTxBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="发送" />
+
+        <EditText
+            android:id="@+id/uartTxEt"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="123456" />
+    </LinearLayout>
+
+
+</LinearLayout>
